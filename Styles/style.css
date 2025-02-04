@@ -1,0 +1,47 @@
+/*Reset default margin and padding */
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Flexbox Container */
+.flex-container {
+    display: flex;
+    border: 8px solid black;
+    padding: 5px;
+    height: 200px;
+}
+
+.flex-item {
+background-color: lightblue;
+border: 1px solid darkmagenta;
+text-align: center;
+font-size: 20px;
+padding: 20px;
+flex: 1; /* Each item takes equal space */
+}
+
+.image-wrapper {
+    display: flex; /* Aligns .image-container elements in a row */
+    gap: 20px; /* Adds space between images */
+}
+
+/* Make Container for all images */
+.image-container {
+    display: flex; /* Align items in a row */
+    border: 8px solid black;
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+}
+
+/* Demo images */
+.demo-image {
+    width: 300px; /* Make the image fit the container */
+    height:300px; /* Maintain aspect ratio */
+    object-fit: cover;
+    border-radius: 10px; /* Add rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+  }
